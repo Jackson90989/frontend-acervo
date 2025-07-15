@@ -1,0 +1,73 @@
+.page {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #12121f, #1e1e2f);
+  color: #e0f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #00fff7;
+  text-shadow: 0 0 10px #00fff7
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.card {
+  background: #22223b;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2), inset 0 0 10px #00fff7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #00fff7, inset 0 0 20px #00fff7;
+}
+
+.cardTitle {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #00f6ff;
+  text-shadow: 0 0 5px #00f6ff;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #c7f1f9;
+}
+
+.cardButton {
+  display: inline-block;
+  text-align: center;
+  padding: 0.7rem 1.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 12px;
+  color: #000;
+  background: #00fff7;
+  box-shadow: 0 0 15px #00fff7;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cardButton:hover {
+  background-color: #00c3be;
+  color: #fff;
+}
