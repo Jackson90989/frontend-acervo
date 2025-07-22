@@ -1,0 +1,120 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #1a1a2e, #0f0f1a);
+  padding: 2rem;
+  color: #eee;
+}
+
+.form {
+  background: #222436;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 0 20px #00ffea66, 0 0 40px #00ffea33 inset;
+  border: 1px solid #00ffea44;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00fff7;
+  text-shadow: 0 0 12px #00fff7;
+}
+
+.logout {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #ff4c4c;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff4c4c;
+  transition: 0.3s;
+
+  &:hover {
+    background: #ff1a1a;
+  }
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+
+  label {
+    font-weight: bold;
+    cursor: pointer;
+
+    input {
+      margin-right: 0.5rem;
+      accent-color: #00fff7;
+    }
+  }
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #444;
+  background: #2f2f4f;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  box-shadow: inset 0 0 6px #000;
+  transition: 0.3s;
+
+  &:focus {
+    outline: none;
+    border-color: #00fff7;
+    box-shadow: 0 0 8px #00fff7;
+  }
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.file {
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+.submit {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(90deg, #00ffea, #00f0ff);
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #000;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00ffea;
+  transition: 0.3s;
+
+  &:hover {
+    background: linear-gradient(90deg, #00e0cc, #00c9ff);
+  }
+}
+
+.error {
+  color: #ff4c4c;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+  text-shadow: 0 0 5px #ff4c4c;
+}
